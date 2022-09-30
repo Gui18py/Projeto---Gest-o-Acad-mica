@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+    <html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Teste do teste</title>
+    </head>
+    <body>
+        <h1>Gestão Acadêmica</h1>
+        {% if user %}
+        <p>Bem-vindo ao seu site de Gestão Acadêmica, {{ user }}!</p>
+        {% else %}
+        <p>Bem vindo ao Gestão Acadêmica</p>
+        {% endif %}      
+    </body>
+</html>

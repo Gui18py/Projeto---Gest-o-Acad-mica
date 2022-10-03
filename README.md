@@ -1,2 +1,2 @@
-# Projeto---Gest-o-Acad-mica
+# Projeto - Gestão Acadêmica
 Repositório para o projeto do trabalho de Fundamentos de Programação

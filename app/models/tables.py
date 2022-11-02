@@ -17,30 +17,3 @@ class User(db.Model):
 
     def __rept__(self):
         return "<User %r>" % self.username
-    
-class Post(db.Model):
-    __tablename__ = "posts"
-
-    id = db.Column(db.Integer, primary_key = True)
-    content = db.Column(db.Text)
-    user_id = db.Column(db.Integer, db.ForeignKey("users.id"))
-
-    user = db.relationship("User", foreign_keys = user_id)
-
-    def __init__(self, content, user_id):
-        self.content = content
-        self.user_id = user_id
-
-    def __repr__(self):
-        return "<Post %r>" % self.id
-
-class Folow(db.Model):
-    __tablename__ = "folows"
-
-    id = db.Column(db.Integer, primary_key = True)
-    user_id = db.Column(db.Integer, db.ForeignKey("users.id"))
-    follower_id = db.Column(db.Integer, db.ForeignKey("users.id"))
-
-    user = db.relationship("User", foreign_key = user_id)
-
-    follower = db.relationship("User", foreign_key = follower_id)

@@ -61,17 +61,17 @@ curl http://localhost:5000/user/fulano
 Cria um usuário chamado `Beltrano` com senha `123456`
 
 ```bash
-curl -X POST https://localhost:5000/add -H "Content-Type: application/json" -d '{"nome": "Beltrano", "senha": "123456"}'
+curl -X POST http://localhost:5000/add -H "Content-Type: application/json" -d '{"nome": "Beltrano", "senha": "123456"}'
 ```
 
 Cria um usuário chamado `Ciclano` com senha `abcdef`
 
 ```bash
-curl -X POST https://localhost:5000/add -H "Content-Type: application/json" -d '{"nome": "Ciclano", "senha": "abcdef"}'
+curl -X POST http://localhost:5000/add -H "Content-Type: application/json" -d '{"nome": "Ciclano", "senha": "abcdef"}'
 ```
 
 Atualiza o usuário chamado `Fulano` com novo nome `Novo Fulano` e nova senha `nova senha`
 
 ```bash
-curl -X POST https://localhost:5000/user/fulano -H "Content-Type: application/json" -d '{"nome": "Novo Fulano", "senha": "nova senha"}'
+curl -X POST http://localhost:5000/user/fulano -H "Content-Type: application/json" -d '{"nome": "Novo Fulano", "senha": "nova senha"}'
 ```

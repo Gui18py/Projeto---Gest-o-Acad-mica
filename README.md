@@ -31,3 +31,47 @@ Exemplo de arquivo:
   }
 ]
 ```
+
+## Como fazer chamados usando `curl`
+
+### Método **GET**
+
+Ver alguma coisa com método get
+
+Vê a lista de _endpoints_
+
+```bash
+curl http://localhost:5000/
+```
+
+Lista os usuários
+
+```bash
+curl http://localhost:5000/listar
+```
+
+Vê o perfil de fulano
+
+```bash
+curl http://localhost:5000/user/fulano
+```
+
+### Método **POST**
+
+Cria um usuário chamado `Beltrano` com senha `123456`
+
+```bash
+curl -X POST https://localhost:5000/add -H "Content-Type: application/json" -d '{"nome": "Beltrano", "senha": "123456"}'
+```
+
+Cria um usuário chamado `Ciclano` com senha `abcdef`
+
+```bash
+curl -X POST https://localhost:5000/add -H "Content-Type: application/json" -d '{"nome": "Ciclano", "senha": "abcdef"}'
+```
+
+Atualiza o usuário chamado `Fulano` com novo nome `Novo Fulano` e nova senha `nova senha`
+
+```bash
+curl -X POST https://localhost:5000/user/fulano -H "Content-Type: application/json" -d '{"nome": "Novo Fulano", "senha": "nova senha"}'
+```

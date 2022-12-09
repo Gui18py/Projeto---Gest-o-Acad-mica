@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='cadastro.css')}}">
+    <title>Cadastro</title>
+</head>
+<body>
+    <div class="title">Gestão Acadêmica</div>
+    <form action="/users/add" method="POST" class="container">
+        <div class="titleCadastro">Cadastrar a Conta</div>
+        <div class="outraParte">
+            <div class="titleBemVindo">Bem vindo ao Gestão Acadêmica</div>
+            <button class="btnLogin">Entrar</button>
+
+        </div>
+        <div class="labelUsuario">Usuário:</div>
+        <input type="text"  required name="nome" id="nome" placeholder="nome">
+        <div class="labelEmail">E-mail:</div>
+        <input type="text" required name="email" id="email" placeholder="e-mail">
+        <button type="submit" class="btnCadastrar">Cadastrar</button>
+
+    </form>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta</title>
+</head>
+<body>
+    <div style="margin-left: 100px">
+        <table>
+            <tr>
+                <th>Nome</th>
+                <th>Email</th>
+            </tr>
+            {% for i in users %}
+            <tr>
+                <td>{{ i.username }}</td>
+                <td>{{ i.email }}</td>
+            </tr>
+            {% endfor %}     
+        </table>
+
+    </div>
+</body>
+</html>

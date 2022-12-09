@@ -1,0 +1,199 @@
+body {
+    background-color: rgba(244, 23, 76, 0.83);
+    font-family: 'Inter';
+    font-style: normal;
+}
+
+.container {
+    position: absolute;
+    width: 1055px;
+    height: 470px;
+    left: 218px;
+    top: calc(50% - 482px/2 + 20.5px);
+
+    background: #FFFFFF;
+    box-shadow: 5px 6px 4px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 16px;
+}
+
+#nome {
+    position: absolute;
+    width: 450px;
+    height: 40px;
+    left: 530px;
+    top: 165px;
+
+    background: #F5F5F5;
+    border-radius: 10px;
+}
+
+#email {
+    position: absolute;
+    width: 450px;
+    height: 40px;
+    left: 530px;
+    top: 250px;
+
+    background: #F5F5F5;
+    border-radius: 10px;
+}
+
+.btnCadastrar {
+    box-sizing: border-box;
+    position: absolute;
+    background: #F4174C;
+    border: 3px solid #FFFFFF;
+    box-shadow: 5px 4px 4px rgba(0, 0, 0, 0.25);
+    color: white;
+    font-size: 25px;
+    border-radius: 20px;
+    position: absolute;
+    left: 600px;
+    top: 350px;
+    height: 45px;
+    width: 255px;
+}
+
+.title {
+    position: absolute;
+    width: 550px;
+    height: 77px;
+    left: 433px;
+    top: 40px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 77px;
+    text-align: center;
+
+    color: white;
+
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.labelUsuario {
+    position: absolute;
+    width: 90px;
+    height: 29px;
+    left: 530px;
+    top: 136px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+
+    text-align: center;
+
+    color: #F4174C;
+}
+
+.labelEmail {
+    position: absolute;
+    width: 81px;
+    height: 29px;
+    left: 530px;
+    top: 220px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+
+    text-align: center;
+
+    color: #F4174C;
+}
+
+.titleCadastro {
+    position: absolute;
+    width: 282px;
+    height: 39px;
+    left: 620px;
+    top: 50px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 39px;
+
+    text-align: center;
+
+    color: #F4174C;
+}
+
+.outraParte {
+    background-color: #F4174C;
+    height: 470px;
+    width: 482px;
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+.titleBemVindo {
+    position: absolute;
+    width: 294px;
+    height: 144px;
+    left: 90px;
+    top: 97px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 48px;
+    text-align: center;
+
+    color: #FFFFFF;
+
+    text-shadow: 3px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.btnLogin {
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 255px;
+    height: 45px;
+    left: 110px;
+    top: 350px;
+
+    border: 3px solid #FFFFFF;
+    filter: drop-shadow(5px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 20px;
+    box-sizing: border-box;
+    position: absolute;
+    background: #F4174C;
+    border: 3px solid #FFFFFF;
+    box-shadow: 5px 4px 4px rgba(0, 0, 0, 0.25);
+    color: white;
+    font-size: 25px;
+    border-radius: 20px;
+
+}
+
+input {
+    border: none;
+    outline: none;
+}
+
+input:hover{
+    border:2px solid rgba(244, 23, 76, 0.83);
+}
+
+input::placeholder {
+    color: rgba(244, 23, 76, 0.83);
+    position: absolute;
+    left: 10px;
+    top: 14px;
+    font-weight: 600;
+}
+
+input:focus {
+    border:2px solid rgba(244, 23, 76, 0.83);
+}

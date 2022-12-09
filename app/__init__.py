@@ -1,12 +1,12 @@
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
-from flask_migrate import Migrate
 
 app = Flask(__name__)
-app.config.from_object("config")
 
-db = SQLAlchemy(app)
-migrate = Migrate(app, db)
+app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///project.db"
 
-from app.models import tables, Forms
-from app.controllers import default
+db = SQLAlchemy()
+
+db.init_app(app)
+
+from App import default

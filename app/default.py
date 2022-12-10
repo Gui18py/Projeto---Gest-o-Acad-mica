@@ -19,5 +19,5 @@ def add():
         db.session.add(user)
         db.session.commit()
 
-        return redirect(url_for("index"))
+        return redirect(url_for("tabela_usuarios"))
     return render_template("cadastro.html")

@@ -1,6 +1,7 @@
 from App import app, db
 from flask import render_template, request, redirect, url_for
 from App.tables import User
+from flask_login import login_user
 
 @app.route("/home")
 def home():
@@ -22,10 +23,17 @@ def add():
         db.session.add(user)
         db.session.commit()
 
-        return redirect(url_for("index"))
+        return redirect(url_for("login"))
     return render_template("cadastro.html")
 
 
 @app.route("/users/login", methods=["GET", "POST"])
 def login():
-    render_template("login.html")
+    if request.method == "POST":
+        email = request.form["email"]
+
+        user = User.query.filter_by(email=email).one()
+        login_user(user)
+        
+        return redirect(url_for("home"))
+    return render_template("login.html")
